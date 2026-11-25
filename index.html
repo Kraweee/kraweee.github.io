@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fare Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/jpg" href="favicon.ico">
+</head>
+<body>
+  <div class="calculator-container">
+    <div class="tabs">
+      <button class="tab active" data-route="malolos">Malolos</button>
+      <button class="tab" data-route="balagtas">Balagtas</button>
+      <button class="tab" data-route="guiguinto">Guiguinto</button>
+    </div>
+
+    <div class="calculator">
+      <h1>Diesel n' Steel Fare Calculator</h1>
+
+      <label for="direction">Direction:</label>
+      <select id="direction">
+        <option value="bulakan">Bulakan → Malolos</option>
+        <option value="malolos">Malolos → Bulakan</option>
+      </select>
+
+      <label for="origin">Origin:</label>
+      <select id="origin"></select>
+
+      <label for="destination">Destination:</label>
+      <select id="destination"></select>
+
+      <label for="passengers">Number of Passengers:</label>
+      <input type="number" id="passengers" value="1" min="1">
+
+      <div class="results">
+        <div class="fare-box" id="regularBox"></div>
+        <div class="fare-box" id="discountBox"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
